@@ -15,3 +15,14 @@
          url("../fonts/#{to-lower-case($fontNameSecond)}.woff") format("woff");
   }
 }
+
+@mixin title($color: null, $fontSize: $fontSizeTitle, $lineHeight: null, $fontWeight: null, $letterSpacing: null) {
+  @extend %title;
+  font: {
+    weight: $fontWeight;
+    size: $fontSize;
+  }
+  line-height: $lineHeight;
+  color: $color;
+  letter-spacing: $letterSpacing;
+}
