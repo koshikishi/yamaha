@@ -1,0 +1,50 @@
+.products-nav {
+  border-bottom: 1px solid $colorSeparator;
+}
+
+.products-nav__list {
+  @extend %container, %list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-right: 18px;
+}
+
+.products-nav__item {
+  position: relative;
+  padding: {
+    top: 22px;
+    bottom: 12px;
+  }
+  text-align: center;
+
+  &:not(:nth-child(5n)):not(:last-child) {
+    margin-right: 119px;
+  }
+}
+
+.products-nav__link {
+  @include title(inherit, $fontSizeNav);
+  width: 162px;
+
+  &:hover,
+  &:focus,
+  &--active {
+    outline: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      background-color: $colorPrimary;
+    }
+  }
+
+  img {
+    display: block;
+    margin-bottom: 11px;
+  }
+}
