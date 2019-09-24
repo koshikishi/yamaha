@@ -1,0 +1,17 @@
+.user-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  max-width: 500px;
+}
+
+.user-nav__link {
+  @include title(inherit, $fontSizeNavSmall, $letterSpacing: $letterSpacingNav);
+  margin: {
+    top: 2px;
+    right: 16px;
+    left: 16px;
+  }
+}
