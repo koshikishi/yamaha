@@ -1,4 +1,5 @@
 .product {
+  @extend %container;
   display: flex;
   justify-content: center;
   padding: {
