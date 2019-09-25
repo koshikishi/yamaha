@@ -1,0 +1,63 @@
+.footer {
+  background-color: $colorText;
+}
+
+.footer__top {
+  @extend %container;
+  display: flex;
+  padding: 39px 176px 36px;
+}
+
+.footer__columns {
+  display: flex;
+  margin-right: 63px;
+}
+
+.footer__column {
+  @extend %list-reset;
+  @include title($colorTextFooter, $fontSizeNavSmall, $lineHeightLarge, $fontWeightNormal);
+  width: 195px;
+}
+
+.footer__column-link {
+  color: inherit;
+}
+
+.footer__logo {
+  align-self: center;
+
+  img {
+    display: block;
+  }
+}
+
+.footer__bottom {
+  background-color: $colorBlackLight;
+}
+
+.footer__wrapper {
+  @extend %container;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 163px 11px 176px;
+}
+
+.footer__copyright {
+  @include title($colorTextFooter, $fontSizeFooter, $lineHeightLarge, $fontWeightNormal);
+  max-width: 390px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 650px;
+}
+
+.footer__nav-link {
+  @include title($colorTextFooter, $fontSizeFooter, $lineHeightLarge, $fontWeightNormal);
+  margin: {
+    right: 13px;
+    left: 13px;
+  }
+}

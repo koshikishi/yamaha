@@ -3,7 +3,312 @@
   <head>
     <meta charset="utf-8">
     <title>Yamaha Street | Simple Motorcycle Landing Page</title>
+    <link rel="preload" href="fonts/oswald-medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswald-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/sourcesanspro-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="page">
+    <div hidden>
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="header__logo">
+          <img src="img/logo_header.png" alt="Yamaha Street Logo" width="100" height="100">
+        </a>
+        <nav class="header__nav">
+          <ul class="main-nav">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active" href="#!">Supersport</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#!">Supersport Touring</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#!">Sport</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#!">Dual Sport</a>
+            </li>
+          </ul>
+          <div class="user-nav">
+            <a class="user-nav__link" href="#!">Find a Dealer</a>
+            <a class="user-nav__link" href="#!">My Yamaha Login/Signup</a>
+            <a class="user-nav__link" href="#!">Events & Demos</a>
+          </div>
+        </nav>
+        <a class="header__search" href="#!">
+          <span class="visually-hidden ">Search</span>
+        </a>
+      </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Yamaha Supersport 2016 YZF-R1</h1>
+      <nav class="products-nav">
+        <ul class="products-nav__list">
+          <li class="products-nav__item">
+            <a class="products-nav__link" href="#!">
+              <img src="img/product_01-preview.png" alt="Yamaha Supersport 2016 YZF-R1M" width="162" height="92">
+              <span>2016 YZF-R1M</span>
+            </a>
+          </li>
+          <li class="products-nav__item">
+            <a class="products-nav__link products-nav__link--active" href="#!">
+              <img src="img/product_02-preview.png" alt="Yamaha Supersport 2016 YZF-R1" width="162" height="92">
+              <span>2016 YZF-R1</span>
+            </a>
+          </li>
+          <li class="products-nav__item">
+            <a class="products-nav__link" href="#!">
+              <img src="img/product_03-preview.png" alt="Yamaha Supersport 2016 YZF-R1S" width="162" height="92">
+              <span>2016 YZF-R1S</span>
+            </a>
+          </li>
+          <li class="products-nav__item">
+            <a class="products-nav__link" href="#!">
+              <img src="img/product_04-preview.png" alt="Yamaha Supersport 2016 YZF-R6" width="162" height="92">
+              <span>2016 YZF-R6</span>
+            </a>
+          </li>
+          <li class="products-nav__item">
+            <a class="products-nav__link" href="#!">
+              <img src="img/product_05-preview.png" alt="Yamaha Supersport 2016 YZF-R3" width="162" height="92">
+              <span>2016 YZF-R3</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="product">
+        <div class="product__photo">
+          <img src="img/product_02-full.jpg" alt="Yamaha Supersport 2016 YZF-R1 Full Photo" width="759" height="517">
+          <a class="product__photo-details product__photo-details--top" href="#!">
+            <span class="visually-hidden ">More Details</span>
+          </a>
+          <a class="product__photo-details product__photo-details--right" href="#!">
+            <span class="visually-hidden ">More Details</span>
+          </a>
+          <a class="product__photo-details product__photo-details--left" href="#!">
+            <span class="visually-hidden ">More Details</span>
+          </a>
+        </div>
+        <div class="product__info">
+          <div class="product__heading">
+            <h2 class="product__title">YZF‑R1</h2>
+            <ul class="product__years">
+              <li class="product__years-item">
+                <a class="product__years-link product__years-link--active" href="#!">2016</a>
+              </li>
+              <li class="product__years-item">
+                <a class="product__years-link" href="#!">2015</a>
+              </li>
+            </ul>
+          </div>
+          <p class="product__price">
+            <span class="product__price-text">Starting at</span>
+            $16,490
+          </p>
+          <div class="product__colors">
+            <a class="product__colors-button product__colors-button--blue-gray product__colors-button--active" href="#!">
+              <span class="visually-hidden">Blue/Gray Colors</span>
+            </a>
+            <a class="product__colors-button product__colors-button--darkgray-gray" href="#!">
+              <span class="visually-hidden">Dark Gray/Gray Colors</span>
+            </a>
+            <a class="product__colors-button product__colors-button--yellow-darkgray" href="#!">
+              <span class="visually-hidden">Yellow/Dark Gray Colors</span>
+            </a>
+          </div>
+          <p class="product__description">
+            The YZF-R1® features a lightweight and compact crossplane-crankshaft, inline-four-cylinder, 998cc high output engine.<br>
+            The first ever for a production motorcycle—the motor delivers extremely high horsepower and a strong pulse of linear torque for outstanding performance.
+          </p>
+          <div class="product__buttons">
+            <a class="button" href="#!">Find a Dealer</a>
+            <a class="button" href="#!" download>Download Specs</a>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <h2 class="visually-hidden">Bike Specs</h2>
+        <div class="features__control">
+          <a class="features__button" href="#!">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="23" viewBox="0 0 85.333336 69.333336"><use xlink:href="#icon-features"></use></svg>
+            <span>Key Features</span>
+          </a>
+          <a class="features__button features__button--active" href="#!">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="28" viewBox="0 0 45.332401 85.333336"><use xlink:href="#icon-power"></use></svg>
+            <span>Power</span>
+          </a>
+          <a class="features__button" href="#!">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="26" viewBox="0 0 85.333336 80"><use xlink:href="#icon-specs"></use></svg>
+            <span>Specs</span>
+          </a>
+          <a class="features__button" href="#!">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" viewBox="0 0 85.333336 77.333336"><use xlink:href="#icon-speed"></use></svg>
+            <span>Speed</span>
+          </a>
+          <a class="features__button" href="#!">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="13" viewBox="0 0 85.315063 38.666668"><use xlink:href="#icon-life"></use></svg>
+            <span>Life</span>
+          </a>
+        </div>
+        <ul class="features__slider">
+          <li class="features__slider-item features__slider-item--active">
+            <img class="features__slider-image" src="img/features_02.png" alt="Yamaha Supersport 2016 YZF-R1 Engine" width="320" height="359">
+            <div class="features__slider-info">
+              <h3 class="features__slider-title">Cutting-edge Crossplane Engine</h3>
+              <p class="features__slider-text">The 998cc in-line 4-cylinder, crossplane crankshaft engine features titanium fracture-split connecting rods, which are an industry first for a production motorcycle.</p>
+              <h3 class="features__slider-title">Compact Stacked Transmission</h3>
+              <p class="features__slider-text">
+                A 6-speed transmission has also been adopted to match the<br>
+                new engine. The transmission "stacks" the input/output shafts to centralize mass and to keep the overall engine size shorter front to<br>
+                back, which optimizes engine placement in the frame for outstanding weight balance.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="gallery">
+        <h2 class="visually-hidden">Bike Gallery</h2>
+        <div class="gallery__list">
+          <a class="gallery__image" href="#!">
+            <img src="img/gallery_01-preview.jpg" alt="Yamaha Supersport 2016 YZF-R1 Gallery Preview" width="351" height="257">
+          </a>
+          <a class="gallery__image" href="#!">
+            <img src="img/gallery_02-preview.jpg" alt="Yamaha Supersport 2016 YZF-R1 Gallery Preview" width="351" height="257">
+          </a>
+          <a class="gallery__image gallery__image--large" href="#!">
+            <img src="img/gallery_03-preview-large.jpg" alt="Yamaha Supersport 2016 YZF-R1 Gallery Preview" width="790" height="514">
+          </a>
+          <a class="gallery__image" href="#!">
+            <img src="img/gallery_04-preview.jpg" alt="Yamaha Supersport 2016 YZF-R1 Gallery Preview" width="351" height="257">
+          </a>
+          <a class="gallery__image" href="#!">
+            <img src="img/gallery_05-preview.jpg" alt="Yamaha Supersport 2016 YZF-R1 Gallery Preview" width="351" height="257">
+          </a>
+        </div>
+      </section>
+      <section class="view360">
+        <h2 class="visually-hidden">Bike 360° View</h2>
+        <img class="view360__image" src="img/view360_preview.jpg" alt="Yamaha Supersport 2016 YZF-R1 360° Preview" width="840" height="559">
+        <a class="view360__button" href="#!">360° View</a>
+      </section>
+      <section class="extras">
+        <h2 class="visually-hidden ">Bike Extras</h2>
+        <div class="extras__category-list">
+          <a class="extras__category-link" href="#!">Deltabox<sup>®</sup> Frame</a>
+          <a class="extras__category-link" href="#!">Linkage-type KYB<sup>®</sup> Shock</a>
+          <a class="extras__category-link" href="#!">MotoGP<sup>®</sup> Developed SCS</a>
+          <a class="extras__category-link" href="#!">MotoGP<sup>®</sup> Styling</a>
+        </div>
+        <div class="extras__product-list">
+          <a class="extras__product-item" href="#!">
+            <img class="extras__product-image" src="img/extras_01-preview.jpg" alt="Yamaha Gloves" width="203" height="173">
+            <h3 class="extras__product-title">Gloves</h3>
+            <p class="extras__product-price">$24.99</p>
+          </a>
+          <a class="extras__product-item" href="#!">
+            <img class="extras__product-image" src="img/extras_02-preview.jpg" alt="Yamaha Jacket" width="203" height="173">
+            <h3 class="extras__product-title">Jacket</h3>
+            <p class="extras__product-price">$199.99</p>
+          </a>
+          <a class="extras__product-item" href="#!">
+            <img class="extras__product-image" src="img/extras_03-preview.jpg" alt="Yamaha Helmet" width="203" height="173">
+            <h3 class="extras__product-title">Helmet</h3>
+            <p class="extras__product-price">$159.99</p>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__columns">
+          <ul class="footer__column">
+            <li>
+              <a class="footer__column-link" href="#!">Find a Dealer</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">Current Offers</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">Events & Demos</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">News</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">Racing</a>
+            </li>
+          </ul>
+          <ul class="footer__column">
+            <li>
+              <a class="footer__column-link" href="#!">Rider Training</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">Purchase Tools</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">Try A Yamaha</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">View Owner's Manuals</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">Buy Manuals Online</a>
+            </li>
+          </ul>
+          <ul class="footer__column">
+            <li>
+              <a class="footer__column-link" href="#!">Accessories</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">Apparel</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">Parts & Service</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">View Parts Catalog</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">Shop & Maintenance</a>
+            </li>
+          </ul>
+          <ul class="footer__column">
+            <li>
+              <a class="footer__column-link" href="#!">Yamaha Motor USA Home</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">Contact Us</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">Terms & Conditions</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#!">Recalls</a>
+            </li>
+          </ul>
+        </div>
+        <a class="footer__logo">
+          <img src="img/logo_footer.png" alt="Yamaha Logo" width="214" height="47">
+        </a>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__wrapper">
+          <p class="footer__copyright">©2016 Yamaha Motor Corporation, USA. All rights reserved.</p>
+          <div class="footer__nav">
+            <a class="footer__nav-link" href="#!">Customer Service</a>
+            <a class="footer__nav-link" href="#!">Contact Us</a>
+            <a class="footer__nav-link" href="#!">Privacy Policy</a>
+            <a class="footer__nav-link" href="#!">Terms & Conditions</a>
+            <a class="footer__nav-link" href="#!">Dealer Login</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

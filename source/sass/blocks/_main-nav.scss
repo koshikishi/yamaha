@@ -1,0 +1,32 @@
+.main-nav {
+  @extend %list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 760px;
+  margin-right: auto;
+}
+
+.main-nav__item {
+  position: relative;
+  padding: 40px 35px 32px;
+}
+
+.main-nav__link {
+  @include title(inherit, $letterSpacing: $letterSpacingNav);
+
+  &:hover,
+  &:focus,
+  &--active {
+    outline: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      background-color: $colorPrimary;
+    }
+  }
+}

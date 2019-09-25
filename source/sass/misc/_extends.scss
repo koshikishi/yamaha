@@ -1,0 +1,30 @@
+%container {
+  box-sizing: border-box;
+  width: 1492px;
+  margin: {
+    right: auto;
+    left: auto;
+  }
+}
+
+%list-reset {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  padding-left: 0;
+  list-style: none;
+}
+
+%title {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  font: {
+    weight: $fontWeightMedium;
+    family: $fontFamilyTitle;
+  }
+  line-height: $lineHeightNormal;
+  text-transform: uppercase;
+}

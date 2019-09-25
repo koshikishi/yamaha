@@ -1,0 +1,22 @@
+.view360 {
+  @extend %container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: {
+    top: 40px;
+    right: 10px;
+  }
+}
+
+.view360__image {
+  display: block;
+  margin-bottom: -4px;
+}
+
+.view360__button {
+  @include title(inherit);
+  margin-left: 12px;
+  padding-left: 32px;
+  background: url("../img/view360_icon-rotate.svg") left / 23px no-repeat;
+}

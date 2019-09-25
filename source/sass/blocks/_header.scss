@@ -1,0 +1,34 @@
+.header {
+  border-bottom: 1px solid $colorSeparator;
+}
+
+.header__wrapper {
+  @extend %container;
+  display: flex;
+}
+
+.header__logo {
+  width: 100px;
+  background-color: $colorPrimary;
+
+  img {
+    display: block;
+  }
+}
+
+.header__nav {
+  display: flex;
+  width: 1292px;
+  margin-right: 18px;
+}
+
+.header__search {
+  align-self: center;
+  width: 18px;
+  height: 18px;
+  margin: {
+    top: 3px;
+    right: 64px;
+  }
+  background: url("../img/header_icon-search.svg") center / contain no-repeat;
+}

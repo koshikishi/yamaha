@@ -1,0 +1,110 @@
+.features {
+  @extend %container;
+  padding-top: 58px;
+}
+
+.features__control {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 998px;
+  margin: {
+    right: auto;
+    left: auto;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 35px;
+    bottom: 6px;
+    left: 35px;
+    height: 1px;
+    background-color: rgba($colorGray, 0.5);
+  }
+}
+
+.features__button {
+  @include title($colorGray, $fontSizeTitleSmall);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70px;
+  height: 54px;
+  padding-bottom: 25px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 13px;
+    height: 13px;
+    background-color: currentColor;
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+
+  svg {
+    margin-bottom: auto;
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus,
+  &--active {
+    color: $colorText;
+    outline: none;
+
+    &::after {
+      background-color: $colorPrimary;
+    }
+
+    svg {
+      fill: $colorPrimary;
+    }
+  }
+}
+
+.features__slider {
+  @extend %list-reset;
+}
+
+.features__slider-item {
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 400px;
+  padding: {
+    top: 75px;
+    left: 4px;
+  }
+
+  &--active {
+    display: flex;
+  }
+}
+
+.features__slider-image {
+  margin-right: 89px;
+}
+
+.features__slider-info {
+  width: 450px;
+  padding-top: 6px;
+}
+
+.features__slider-title {
+  @include title;
+  margin-bottom: 10px;
+}
+
+.features__slider-text {
+  margin: {
+    top: 0;
+    bottom: 45px;
+  }
+  font-size: $fontSizeTextSmall;
+  line-height: $lineHeightTextSmall;
+}

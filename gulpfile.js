@@ -12,6 +12,8 @@ var imagemin = require('gulp-imagemin');
 var imageminPngquant = require('imagemin-pngquant');
 var imageminMozjpeg = require('imagemin-mozjpeg');
 var svgstore = require('gulp-svgstore');
+var svgmin = require('gulp-svgmin');
+var path = require('path');
 var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var htmlmin = require('gulp-htmlmin');
@@ -79,7 +81,7 @@ function sprite() {
             minify: true
           }
         }]
-      }
+      };
     }))
     .pipe(svgstore({
       inlineSvg: true

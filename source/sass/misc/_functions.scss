@@ -1,0 +1,14 @@
+@function spaceless($string) {
+  $spaceIndex: str-index($string, ' ');
+
+  @if $spaceIndex {
+    @while $spaceIndex {
+      $string: str-slice($string, 1, $spaceIndex - 1) + str-slice($string, $spaceIndex + 1);
+      $spaceIndex: str-index($string, ' ');
+    }
+
+    @return $string;
+  }
+
+  @return $string;
+}
